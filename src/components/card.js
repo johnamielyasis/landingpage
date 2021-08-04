@@ -8,8 +8,8 @@ export default function Card(
 ) {
   return (
     <div className="flex">
-      <div className="flex-initial w-24 h-24">
-        <img src={image} />
+      <div className="container flex-initial w-24 h-24">
+        {image}
       </div>
       <div className="flex-1">
         <h2>{title}</h2>

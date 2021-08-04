@@ -6,12 +6,12 @@ export default function SingleLink(hamburgerOpen) {
   const navItems = navItemsArray.map((arrayItem) => {
     return (
       <Link
-      to={`/${arrayItem.toLowerCase()}/`}
-      className="px-3 nav-item hover:text-yellow-300"
-      key={arrayItem}
-    >
-      {`${arrayItem}`}
-    </Link>
+        to={`/${arrayItem.toLowerCase()}/`}
+        className="px-3 nav-item hover:text-yellow-300"
+        key={arrayItem}
+      >
+        {`${arrayItem}`}
+      </Link>
     )
   }
   )
