@@ -8,7 +8,6 @@ export default function Footer() {
   const [settings, changeSettings] = useRecoilState(settingsAtom);
 
   const handleSettingsChange = (e) => {
-    console.log(e.target.name, e.target.value, e.target.checked)
     let value = e.target.type === 'checkbox' ? e.target.checked : e.target.value
     if (e.target.type === 'number') {
       value = 2 * Math.round(value / 2);

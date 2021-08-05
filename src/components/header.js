@@ -4,11 +4,14 @@ import SingleLink from "./singleLink.js";
 import { Link } from "gatsby";
 import { useRecoilValue } from 'recoil';
 import { settingsAtom } from '../atoms';
+import { themes } from '../constants';
 import background from "../images/lockers.jpg";
 import Settings from "./settings";
 
 export default function Header() {
+  const colors = themes.colorMap;
   const { primaryColor, smSpace, mdSpace, lgSpace } = useRecoilValue(settingsAtom);
+  let primaryFill = colors[primaryColor]
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const handleHamburger = (e) => {
