@@ -8,20 +8,21 @@ import random from '../images/random-thoughts.png';
 import alert from '../images/alert.png';
 import BLM from './undraw/blm';
 import Alert from './undraw/alert';
-
+import Message from './undraw/message';
+import Mobile from './undraw/mobile';
 
 export default function Body() {
   const { primaryColor, smSpace, mdSpace, lgSpace } = useRecoilValue(settingsAtom);
 
   const cards = [
     {
-      image: mobile,
+      image: <Message />,
       title: 'CSU Chancellor',
       description: 'Message Against Racism',
       path: 'pathurl',
     },
     {
-      image: neighborhood,
+      image: <Mobile />,
       title: 'President Covino',
       description: 'Message Against Racism',
       path: 'pathurl',

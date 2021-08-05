@@ -1,6 +1,6 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import Resources from "./resources";
 import Events from "./events";
@@ -25,8 +25,8 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Resources />
       <Events />
-      <About />
-      <Employment />
+      {/* <About />
+      <Employment /> */}
       <Footer />
     </>
   )
